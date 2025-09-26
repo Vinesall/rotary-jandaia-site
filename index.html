@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotary Club de Jandaia do Sul</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome (Ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Estilos CSS personalizados -->
+    <style>
+        :root {
+            --rotary-blue: #005daa;
+            --rotary-gold: #f7a81b;
+            --dark-gray: #343a40;
+            --light-gray: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .navbar {
+            background-color: var(--rotary-blue);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand img {
+            margin-right: 8px; /* Adiciona um pequeno espaço entre o logo e o texto */
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 93, 170, 0.8), rgba(0, 93, 170, 0.8)), url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=2070&auto=format&fit=crop') center center no-repeat;
+            background-size: cover;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+        }
+        
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+
+        .hero-section p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+            color: var(--dark-gray);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--rotary-gold);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .bg-light {
+            background-color: var(--light-gray) !important;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            color: var(--rotary-blue);
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--rotary-blue);
+            margin-right: 15px;
+        }
+
+        .social-icons a {
+            color: var(--dark-gray);
+            font-size: 2.5rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: var(--rotary-blue);
+        }
+
+        .footer {
+            background-color: var(--dark-gray);
+            color: white;
+            padding: 40px 0;
+        }
+        
+        .footer p {
+            margin: 0;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#inicio">
+                <img src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/logo-rotary-emblem-2019-reversed.svg" alt="Logo Rotary" width="100">
+                Jandaia do Sul
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faca-parte">Faça Parte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SEÇÃO INICIAL (HOME) -->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <h1 class="display-4">Rotary Club de Jandaia do Sul</h1>
+            <p class="lead">Unindo pessoas para transformar comunidades em todo o mundo.</p>
+            <a href="#sobre" class="btn btn-warning btn-lg mt-3" style="background-color: var(--rotary-gold); border-color: var(--rotary-gold);">Conheça nossa história</a>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE NÓS -->
+    <section id="sobre">
+        <div class="container">
+            <h2 class="section-title">Nossa História e Missão</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>O Rotary Club de Jandaia do Sul</h3>
+                    <p>Fundado em <strong>1954</strong>, nosso clube tem uma longa tradição de serviço à comunidade de Jandaia do Sul. Nosso primeiro presidente, <strong>Elmir de Souza Cardim</strong>, iniciou uma jornada de liderança e compromisso que seguimos até hoje.</p>
+                    <p>Em 2024, celebramos com orgulho nossos <strong>70 anos de história</strong>, em uma festividade que homenageou membros, parceiros e empresários locais que foram fundamentais para nosso sucesso. Continuamos dedicados a causar um impacto positivo e duradouro.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Rotary International: Uma Visão Global</h3>
+                    <p>O Rotary International foi fundado em 1905 por Paul Harris. Somos uma associação global de clubes de serviço com o objetivo de promover serviços humanitários, valorizar a ética em todas as profissões e fomentar a paz mundial. No Brasil e em Jandaia do Sul, atuamos com foco nas necessidades da nossa comunidade.</p>
+                    <h5>Nossos Valores:</h5>
+                    <ul>
+                        <li><strong>Serviço:</strong> Acreditamos em servir ao próximo.</li>
+                        <li><strong>Integridade:</strong> Pautamos nossas ações por altos padrões éticos.</li>
+                        <li><strong>Diversidade:</strong> Celebramos a diversidade de culturas e profissões.</li>
+                        <li><strong>Companheirismo:</strong> Construímos amizades duradouras.</li>
+                        <li><strong>Liderança:</strong> Desenvolvemos líderes para servir às comunidades.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE PROJETOS -->
+    <section id="projetos" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Nossos Projetos e Ações</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body"><div class="card-icon mb-3"><i class="fas fa-utensils"></i></div><h5 class="card-title">Leitoa à Pururuca</h5><p class="card-text">Nosso tradicional evento gastronômico que une a comunidade e arrecada fundos para nossos projetos sociais, tornando-se um marco no calendário da cidade.</p></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body"><div class="card-icon mb-3"><i class="fas fa-trophy"></i></div><h5 class="card-title">Festividades e Homenagens</h5><p class="card-text">Celebramos marcos importantes, como nossos 70 anos, reconhecendo e homenageando membros e parceiros que contribuem para o fortalecimento da nossa comunidade.</p></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body"><div class="card-icon mb-3"><i class="fas fa-hand-holding-heart"></i></div><h5 class="card-title">Ações Sociais</h5><p class="card-text">Apoiamos diversas causas, desde campanhas de vacinação e doação de sangue até projetos educacionais e de apoio a jovens através do Rotaract e Interact.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SEÇÃO GALERIA (CORRIGIDA COM AS IMAGENS ORIGINAIS E ESTÁVEIS) -->
+    <section id="galeria">
+        <div class="container">
+            <h2 class="section-title">Momentos que Marcam</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-6 mb-4">
+                    <img src="https://images.unsplash.com/photo-1517400508447-f8dd518b86db?q=80&w=800&auto=format&fit=crop" class="gallery-img" alt="Evento gastronômico">
+                </div>
+                <div class="col-lg-5 col-md-6 mb-4">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=800&auto=format&fit=crop" class="gallery-img" alt="Celebração e evento">
+                </div>
+            </div>
+            <p class="text-center mt-3">Acompanhe nossas redes sociais para ver mais fotos e notícias de nossos eventos!</p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO FAÇA PARTE -->
+    <section id="faca-parte" class="bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Faça Parte Desta Mudança</h2>
+            <p class="lead mb-4">O Rotary é formado por pessoas que entram em ação para causar mudanças duradouras em suas comunidades e no mundo. Se você compartilha dos nossos valores e deseja contribuir, adoraríamos conhecer você.</p>
+            <a href="#contato" class="btn btn-primary btn-lg" style="background-color: var(--rotary-blue); border-color: var(--rotary-blue);">Entre em Contato</a>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CONTATO -->
+    <section id="contato">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h4>Fale Conosco</h4>
+                    <p class="lead">Para dúvidas, sugestões ou para saber como participar, envie uma mensagem diretamente em nossas redes sociais. Estamos sempre prontos para conversar!</p>
+                    
+                    <div class="social-icons my-4">
+                        <a href="https://www.instagram.com/rotaryjandaia/tagged/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/p/Rotary-Club-de-Jandaia-do-Sul-100064771565576/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center my-3">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <span>rotaryjandaiadosul@gmail.com</span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center my-3">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <span>R. Dr. Clementino Schiavon Puppi, 631 - centro, Jandaia do Sul - PR, 86900-000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2024 Rotary Club de Jandaia do Sul. Todos os direitos reservados.</p>
+            <p class="small">Desenvolvido como projeto acadêmico. As informações foram baseadas em fontes públicas.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
